@@ -1,8 +1,15 @@
 import './End.css';
 
-const End = () => {
+type RetryProps = {
+  retry: () => void;
+}
+
+const End = ({retry}: RetryProps) => {
   return (
-    <div>End</div>
+    <div>
+      <h1>Game Over</h1>
+      <button onClick={retry}>Resetar jogo</button>
+    </div>
   )
 }
 

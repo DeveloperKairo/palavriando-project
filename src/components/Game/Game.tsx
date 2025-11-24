@@ -1,8 +1,15 @@
 import './Game.css';
 
-const Game = () => {
+type VerifyLetterProps = {
+  verifyLetter: () => void;
+}
+
+const Game = ({verifyLetter}: VerifyLetterProps) => {
   return (
-    <div>Game</div>
+    <div>
+      <h1>Game</h1>
+      <button onClick={verifyLetter}>Finalizar jogo</button>
+    </div>
   )
 }
 
