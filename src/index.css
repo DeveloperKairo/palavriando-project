@@ -75,26 +75,3 @@ button:hover {
   background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
 }
 
-@media (max-width: 768px) {
-  body::before {
-    width: 300px;
-    height: 300px;
-    top: -80px;
-    left: -80px;
-    filter: blur(120px);
-  }
-
-  body::after {
-    width: 200px;
-    height: 200px;
-    bottom: 30px;
-    right: -30px;
-    filter: blur(100px);
-  }
-
-  button {
-      padding: 0 30px; 
-      height: 45px;
-      font-size: 0.9rem;
-  }
-}
