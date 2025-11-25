@@ -131,3 +131,70 @@
   color: var(--secondary-color);
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .game {
+        padding: 0 1rem; /* Margem lateral de segurança */
+    }
+
+    .game h1 {
+        font-size: 1.8em;
+    }
+
+    /* Reduz o tamanho das caixas das letras */
+    .letter, .blankSquare {
+        height: 60px;
+        width: 60px;
+        font-size: 2.2rem;
+        border-radius: 12px;
+    }
+    
+    .wordContainer {
+         gap: 8px; /* Menos espaço entre as letras */
+         margin: 1.5em 0;
+         padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajusta o cabeçalho para empilhar se ficar muito apertado, 
+       embora com os ajustes atuais talvez não precise empilhar */
+    .game-header {
+        font-size: 0.9em; /* Texto um pouco menor no header */
+        margin-bottom: 1.5rem;
+    }
+
+    .points, .guesses {
+        padding: 8px 12px;
+    }
+
+    /* Reduz AINDA MAIS as letras para caberem palavras longas em telas estreitas */
+    .letter, .blankSquare {
+        height: 45px;
+        width: 45px;
+        font-size: 1.6rem;
+        border-width: 1px; /* Borda mais fina */
+        border-radius: 8px;
+    }
+
+    .wordContainer {
+        gap: 5px; /* Espaço mínimo */
+        padding: 0.8em;
+    }
+
+    /* Ajusta a área de input */
+    .letterContainer {
+        padding: 1rem;
+    }
+
+    .letterContainer input {
+        height: 45px;
+        width: 45px;
+        font-size: 1.5em;
+    }
+    
+    .game button {
+        /* Garante que o botão de "Jogar" não fique muito largo no mobile */
+         padding: 0 25px;
+    }
+}

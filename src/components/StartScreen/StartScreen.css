@@ -31,3 +31,19 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+  .start {
+    padding: 2rem 1.5rem; /* Menos padding interno */
+    margin: 0 1rem; /* Margem lateral para não grudar na borda da tela */
+    width: 90%; /* Ocupa a maior parte da largura disponível */
+  }
+
+  .start h1 {
+    font-size: 2.5em; /* Reduz o título de 4em para 2.5em */
+  }
+
+  .start p {
+    font-size: 1em;
+  }
+}
