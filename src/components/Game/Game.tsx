@@ -14,7 +14,6 @@ type GameProps = {
 
 const Game = ({
   verifyLetter,
-  pickedWord,
   pickedCategory,
   letters,
   guessedLetters,
