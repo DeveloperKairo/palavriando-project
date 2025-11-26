@@ -1,7 +1,5 @@
 # Palavriando
 
-# Palavriando
-
 Jogo simples de adivinhar a palavra desenvolvido com React, Vite, TypeScript e CSS. Este projeto foi criado com o objetivo de praticar e aplicar conceitos fundamentais de desenvolvimento front-end moderno utilizando o ecossistema React.
 
 ## Demonstração
